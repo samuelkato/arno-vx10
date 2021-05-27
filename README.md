@@ -1,5 +1,5 @@
 # arno-vx10
-#Interface rf do controle remoto do ventilador
+## Interface rf do controle remoto do ventilador
 
 Os códigos e outros conteúdos deste repositório tem como intuito replicar o sinal rf enviado pelo controle do ventilador arno vx10.  
 
@@ -12,6 +12,10 @@ Apenas 4 componentes são necessários:
 3 - fonte 12v  
 4 - módulo rf (foi usado parte de um controle queimado)  
 5 - botao para acender luz (opcional)  
+
+O módulo rf está ligado à porta 14 do do esp e está sendo alimentado diretamente pela fonte.  
+O esp tem a tensão regulada pelo conversor dc dc em 3.3v.  
+O botão está conectado à porta 0, no caso do esp12e, ele é usado para que o microcontrolador entre no modo de programação.  
 
 Creio que o módulo rf possa ser facilmente reproduzido com um ndr4003  
 ![controle rf](./imgs/controle2.jpg)  
