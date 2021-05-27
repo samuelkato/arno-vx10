@@ -1,4 +1,20 @@
 # arno-vx10
-interface rf do controle remoto do ventilador
+#Interface rf do controle remoto do ventilador
 
-os códigos e outras informações deste repositório tem como intuito replicar o sinal rf enviado pelo controle do ventilador arno vx10.
+Os códigos e outros conteúdos deste repositório tem como intuito replicar o sinal rf enviado pelo controle do ventilador arno vx10.  
+
+Como podem observar, capricho não é um requisito para que este projeto funcione.  
+![controle com esp12e](./imgs/controle1.jpg)
+
+Apenas 4 componentes são necessários:  
+1 - esp8266 ou esp32 (foi usado um esp12e)  
+2 - conversor dc dc  
+3 - fonte 12v  
+4 - módulo rf (foi usado parte de um controle queimado)  
+5 - botao para acender luz (opcional)  
+
+Creio que o módulo rf possa ser facilmente reproduzido com um ndr4003  
+![controle rf](./imgs/controle2.jpg)  
+
+Obs, todo os switches de configuração do controle estão voltados para baixo.  
+O código do último botão (timer) está incorreto, a correção será feita assim que eu abrir e analisar o controle novamente.
