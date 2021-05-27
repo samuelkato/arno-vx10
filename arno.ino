@@ -1,9 +1,11 @@
 /*
- * este código é baseado no exemplo de http server wifi disponível na biblioteca ESP8266 do arduino
+ * este código bem simples é baseado no exemplo de http server wifi disponível na biblioteca ESP8266 do arduino
  * deve exibir o ip para acesso via serial ao se conectar com sucesso no ssid informado
  * espera um botão na porta 0, que usa pullup interno
  * a saída, por default na porta 14, deve ser ligada a um circuito rf compatível com o esperado pelo ventilador
  * no meu caso, usei um controle cujo chip principal havia queimado.
+ * caso precise adicionar mais funcionalidades, creio que seja interessante trocar delay por interrupt,
+ * de modo a não bloquear seu microcontrolador por muito tempo.
 */
 
 //trocar para biblioteca adequada WIFI caso ESP32
